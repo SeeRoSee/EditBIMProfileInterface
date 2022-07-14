@@ -1,9 +1,6 @@
 /*class Anzeige {
     public static void main(String[] args) {
         try {
-            //  OpenWeather API:
-            //  https://api.openweathermap.org/data/2.5/weather?lat=51.050407&lon=13.737262&appid=90d4dad00251933d21a5ecf1495247c2
-
 
             def URL = new URL("https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=90d4dad00251933d21a5ecf1495247c2")
 
