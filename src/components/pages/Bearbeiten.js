@@ -1,13 +1,10 @@
 import React from 'react';
 import '../../App.css';
-import Anzeige from '../Anzeige.groovy';
+import EditWindow from '../EditWinow';
 
 export default function Bearbeiten() {
-
-    return <>
-        <h1 className='bearbeiten'>BEARBEITEN</h1>
-
-        <Anzeige />
-    </>
+    return <div className="bearbeiten">
+        <EditWindow/>
+    </div>
         ;
 }

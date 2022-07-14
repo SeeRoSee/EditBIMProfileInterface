@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import BusinessRoundedIcon from '@mui/icons-material/BusinessRounded';
 import './Navbar.css';
 
 function Navbar() {
@@ -30,7 +31,7 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             BIM-Profile
-            <i class='fab fa-typo3' />
+            <BusinessRoundedIcon fontSize="large"/>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
