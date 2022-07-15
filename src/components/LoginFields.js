@@ -1,13 +1,18 @@
-import * as React from 'react';
+import React, {useState, useContext} from 'react';
 import TextField from '@mui/material/TextField';
 import {Grid, Paper, Avatar, Button, Typography, Link} from "@mui/material";
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import BusinessRoundedIcon from "@mui/icons-material/BusinessRounded";
 
+import {TokenContext} from './Store';
+
 export default function LoginFields() {
+
     const [name, setName] = React.useState('');
     const [pw, setPw] = React.useState('');
+    const [token] = useContext(TokenContext);
+
     const handleChangeName = (event) => {
         setName(event.target.value);
     };
@@ -31,7 +36,7 @@ export default function LoginFields() {
                         <h2>Login</h2>
                     </Grid>
                     <TextField style={fieldStyle} label='Username' placeholder='Enter username' fullWidth required/>
-                    <TextField style={fieldStyle} label='Password' placeholder='Enter password' type='password'
+                    <TextField style={fieldStyle} label='Passwort' placeholder='Enter password' type='password'
                                fullWidth required/>
                     <FormControlLabel
                         control={
