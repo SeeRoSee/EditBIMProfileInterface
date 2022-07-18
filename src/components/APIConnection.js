@@ -15,8 +15,6 @@ async function APIConnection() {
             data: {
                 //userName: {username},
                 //password: {password}
-                userName: "sven.axt@map-network.de",
-                password: "r2yLHLR(zslX<{DCtktA"
             }
         }
         let res = await axios.post('https://bimeta-prod-api.azurewebsites.net/api/v0.1/auth', requestOptions);
