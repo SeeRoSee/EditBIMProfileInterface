@@ -6,7 +6,9 @@ import {TokenContext, UsernameContext, PasswordContext} from './Store';
 async function APIConnection() {
 
     const [token, setToken] = useContext(TokenContext);
+    // eslint-disable-next-line
     const [username] = useContext(UsernameContext);
+    // eslint-disable-next-line
     const [password] = useContext(PasswordContext);
 
     try {

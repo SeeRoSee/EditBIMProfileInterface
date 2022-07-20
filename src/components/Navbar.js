@@ -11,7 +11,7 @@ export default function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
-    const [token, setToken] = useContext(TokenContext);
+    const [token] = useContext(TokenContext);
     const [status] = useContext(StatusContext);
 
     const handleClick = () => setClick(!click);
@@ -90,14 +90,6 @@ export default function Navbar() {
                             Registrierung
                         </Button>
                     </Link>
-                    }
-                    {button &&
-                        <Button
-                            buttonStyle='btn--outline'
-                            onClick={() => {setToken("")}}
-                        >
-                            Token-Löschung
-                        </Button>
                     }
                 </div>
             </nav>
