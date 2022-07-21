@@ -34,8 +34,7 @@ export default function LoginFields() {
     async function Swagger() {
         const client = await api.getClient();
         const res = await client.GetUserToken({
-            "userName": "sven.axt@map-network.de",
-            "password": "r2yLHLR(zslX<{DCtktA"
+
         });
         console.log('POST Token', res.data);
     }*/
