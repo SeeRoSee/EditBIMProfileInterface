@@ -2,17 +2,6 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Bimeta API",
-    "description": "The BIMeta API provides the meta data of BIMeta fpr developers. With the help of the API, developers can easily integrate this metadata into their own applications. The content of BIMeta is owned and licensed by the publishing organizations.",
-    "termsOfService": "https://www.bimeta.de/datenschutz",
-    "contact": {
-      "name": "Bimeta Steuerkreis",
-      "url": "https://www.bimeta.de",
-      "email": "info@bimeta.de"
-    },
-    "license": {
-      "name": "BIMeta License",
-      "url": "https://www.bimeta.de"
-    },
     "version": "0.1"
   },
   "servers": [

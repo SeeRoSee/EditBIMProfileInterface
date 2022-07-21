@@ -11,7 +11,7 @@ import {TokenContext, StatusContext, UsernameContext, PasswordContext} from './S
 import axios from "axios";
 import {OpenAPIProvider, useOperation} from "react-openapi-client";
 import OpenAPIClientAxios from 'openapi-client-axios';
-import def from './def.json';
+import def from '../services/def.json';
 
 export default function LoginFields() {
 
@@ -87,8 +87,7 @@ export default function LoginFields() {
                 data: {
                     //userName: {username},
                     //password: {password}
-                    userName: "sven.axt@map-network.de",
-                    password: "r2yLHLR(zslX<{DCtktA"
+
                 }
             }
             let res = await axios.post('https://bimeta-prod-api.azurewebsites.net/api/v0.1/auth', requestOptions);
